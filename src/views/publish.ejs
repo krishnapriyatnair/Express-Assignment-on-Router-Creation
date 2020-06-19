@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Books</title>
+    <link rel="stylesheet" href="/cssfiles/publishstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <header id='menu'>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/books-logo.jpg" width="30px" height="30px" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <%for(var i=0;i<nav.length-2 ;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          </li>
+          <%}%>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+         <a href="<%=nav[5].link%>" class="btn btn-outline-success  mr-sm-2" role="button" aria-pressed="true"><%=nav[5].name%></a>
+          <a href="<%=nav[6].link%>" class="btn btn-outline-success my-2 my-sm-7" role="button" aria-pressed="true"><%=nav[6].name%></a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+      <section id="author">
+        
+        <h1><marquee behavior="scroll" direction="left">Launch a new realse here!!!</marquee></h1>
+<div class="container">
+          <h2><%=title%> </h2>
+       <h3> Reach More Readers.Sell More Books.</h3>
+        <p> We  provide you with tools ,you need to connect with millions of power readers hungry for their next great book.</p>
+
+<form action="#" onsubmit="return submission()">
+  <div class="form-group row">
+    <label for="title" class="col-sm-2 col-form-label">Book Title</label>
+    <input type="text"  id="booktitle">
+  </div>
+  <div class="form-group row">
+    <label for="author" class="col-sm-2 col-form-label">Book Author</label>
+    <input type="text" id="bookauthor">
+    
+  </div>
+  <div class="form-group row">
+    <label for="gener" class="col-sm-2 col-form-label">Book Gener</label>
+    <input type="text"  id="bookgener">
+  </div>
+  <div class="form-group row">
+    <label for="Choosefile" class="col-sm-2 col-form-label">Choose file</label>
+    <input type="file" id="choosefile">
+  </div>
+  <div class="form-group row">
+    <label for="submit" class="col-sm-2 col-form-label">Submit</label>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+    </form>
+
+  
+<div class="sign"> 
+  <ul>
+    <li>
+        <h6> Not a member yet!  </h6>
+         <a href="/signup" class="btn btn-success  mr-sm-0" role="button"  aria-pressed="true">SignUp Free </a></li>
+              <br>
+            <li>
+              <a href="/login" class="btn btn-primary btn-lg btn-block " aria-pressed="true">Already a member : click here</a></li>
+            </ul>
+           </div>
+        
+          </div> 
+</section>
+ 
+<div class="footer">
+     <div class="row">
+          <div class="col-sm-3">
+             <a href="#" onclick=evenalert()>About us</a>
+             </div>
+          <div class="col-sm-3">
+  
+             <a href="#" onclick=evenalert2()>Contact us</a>
+           </div>
+  
+           <div class="col-sm-3">
+  
+            <a href="#" onclick=evenalert3()>Donate</a>
+          </div>
+         <div class="col-sm-3">
+          <a href="/faq" >FAQ</a>
+         </div>
+      </div>
+</div>
+<script src="/js/publish.js"></script>
+<script src="/js/lmsjs.js"></script>
+
+
+</body>
+</html>

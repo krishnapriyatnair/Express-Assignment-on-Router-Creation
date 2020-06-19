@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="/cssfiles/bookstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <header id='menu'>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/books-logo.jpg" width="30px" height="30px" alt="">
+      </a>
+
+      
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <%for(var i=0;i<nav.length-2 ;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          </li>
+          <%}%>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+         <a href="<%=nav[5].link%>" class="btn btn-outline-success  mr-sm-2" role="button" aria-pressed="true"><%=nav[5].name%></a>
+          <a href="<%=nav[6].link%>" class="btn btn-outline-success my-2 my-sm-7" role="button" aria-pressed="true"><%=nav[6].name%></a>
+        </form>
+      </div>
+    </nav>
+  </header> 
+<h1>
+    Discover the books you'll love 
+</h1>
+<section id ="section1">
+
+<div class="container">
+  <br>
+  <br>
+  <div class="card mb-3" style="max-width: 740px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/images/<%=book.img%>" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-text"><%=book.genre%> </h3>
+          <br>
+          <h5> We connect our readers to the world of books with our unbeatable collections. Enjoy your reading from our latest <%=book.genre%> collection. </h5>
+          <br>
+          <a href="<%=book.link%> " class="card-link" target="_blank">Click here to get the complete list</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  
+                        
+</div>
+</section>
+<br>
+<br>
+<div class="footer">
+     <div class="row">
+          <div class="col-sm-3">
+             <a href="#" onclick=evenalert()>About us</a>
+             </div>
+          <div class="col-sm-3">
+  
+             <a href="#" onclick=evenalert2()>Contact us</a>
+           </div>
+  
+           <div class="col-sm-3">
+  
+            <a href="#" onclick=evenalert3()>Donate</a>
+          </div>
+         <div class="col-sm-3">
+          <a href="/faq" >FAQ</a>
+         </div>
+      </div>
+</div>
+<script src="/js/lmsjs.js"></script>
+
+</body>
+</html>

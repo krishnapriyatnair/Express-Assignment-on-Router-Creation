@@ -1,0 +1,21 @@
+body{
+    background-image: url(https://cdn4.vectorstock.com/i/1000x1000/75/38/background-wave-vector-1847538.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+
+h6{
+    font-style: italic;
+    font-family: cursive,fantasy;
+}
+li{
+    display: inline;
+   
+}
+.footer{
+    background-color:  rgba(0, 0, 0, 0.74);
+    color:blue;
+    padding: 30px;
+    align-items: stretch;
+}
